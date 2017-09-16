@@ -1,0 +1,14 @@
+{
+  "name": "Inbox",
+  "version": "1.0.0",
+  "description": "A Google Inbox Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Inbox --platform=darwin --out=out --icon=inbox_by_gmail.icns --overwrite"
+  },
+  "author": "chriskim06",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
