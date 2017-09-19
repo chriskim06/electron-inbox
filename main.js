@@ -1,5 +1,5 @@
 const electron = require('electron')
-const {app, BrowserWindow, Menu, globalShortcut, ipcMain, shell} = electron
+const {app, BrowserWindow, Menu, ipcMain, shell} = electron
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -76,7 +76,6 @@ const createWindow = () => {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
-  globalShortcut.register('CommandOrControl+R', () => mainWindow.reload())
   const template = [
     {
       label: 'Edit',
