@@ -1,5 +1,5 @@
 node_modules/
 out/
-Inbox-datwin-x64/
-*.icns
+Inbox-darwin-x64/
+.DS_Store
 
