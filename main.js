@@ -37,7 +37,7 @@ const createWindow = () => {
                 for (let i = 0; i < bundles.length; i++) {
                   let match = re.exec(bundles[i].firstElementChild.innerText)
                   if (match) {
-                    count += match[1] - 1
+                    count += parseInt(match[1], 10) - 1
                   }
                 }
                 if (badgeCount !== count) {
